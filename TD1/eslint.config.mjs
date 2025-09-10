@@ -33,4 +33,7 @@ export default defineConfig([
       "prettier/prettier": "error",
     },
   },
+  {
+    ignores: ["node_modules/", "coverage/"],
+  },
 ]);
