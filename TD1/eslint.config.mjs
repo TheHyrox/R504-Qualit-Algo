@@ -13,6 +13,15 @@ export default defineConfig([
     extends: ["js/recommended"],
     languageOptions: { globals: { ...globals.browser, ...globals.node } },
   },
+  {
+    files: ["**/*.test.js", "**/*.spec.js"],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+      },
+    },
+    rules: {},
+  },
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   prettier,
