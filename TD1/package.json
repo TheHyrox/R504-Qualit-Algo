@@ -9,10 +9,11 @@
   "scripts": {
     "lint": "eslint .",
     "format": "prettier --write .",
-    "test" : "jest --coverage"
+    "test": "cross-env NODE_OPTIONS --experimental-vm-modules jest"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
+    "cross-env": "^10.0.0",
     "eslint": "^9.35.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
