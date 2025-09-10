@@ -1,6 +1,16 @@
-function add(a, b) {
+const calculateSum = (a, b) => {
   return a + b;
+};
+
+function worldFunction(flag) {
+  if (flag) {
+    return "Hello, World!";
+  } else {
+    return "goodbye, World!";
+  }
 }
 
-let result = add(5, 3);
-console.log(result);
+console.log(worldFunction(calculateSum(2, 3)));
+console.log(worldFunction(worldFunction()));
+
+module.exports = { calculateSum, worldFunction };
