@@ -4,12 +4,12 @@
   "description": "",
   "license": "ISC",
   "author": "Hyrox",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "format": "prettier --write .",
-    "test": "cross-env NODE_OPTIONS --experimental-vm-modules jest"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",

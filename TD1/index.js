@@ -13,4 +13,4 @@ function worldFunction(flag) {
 console.log(worldFunction(calculateSum(2, 3)));
 console.log(worldFunction(worldFunction()));
 
-module.exports = { calculateSum, worldFunction };
+export { calculateSum, worldFunction };
